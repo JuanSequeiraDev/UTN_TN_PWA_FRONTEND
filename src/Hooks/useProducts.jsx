@@ -13,6 +13,7 @@ const useProducts = () => {
             headers: getAuthenticationHeaders()
         })
         const data = await response.json()
+        console.log(data)
         if (!data.ok) {
             //Seteamos el error para manejarlo despues
             setProductsError(data.message)

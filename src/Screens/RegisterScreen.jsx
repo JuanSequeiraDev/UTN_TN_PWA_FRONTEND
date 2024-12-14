@@ -57,9 +57,11 @@ const [errorState, setErrorState] = useState({
                 
             }
         }
+        else{
+            navigate('/login')
+        }
+/*         console.log(errorState) */
         
-        console.log(errorState)
-        navigate('/login')
 
         //Tomar el error que venga del back y setear en caso de ser necesario errores
         
